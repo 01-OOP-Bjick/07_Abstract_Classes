@@ -4,22 +4,26 @@ public class App {
     
     public static void main(String[] args) {
         
-        Rectangle rectangle = new Rectangle(5, 6);
-        Circle circle = new Circle(7);
-        Triangle triangle = new Triangle(4, 3);
+        Rectangle rectangle = new Rectangle(10.0, 10.0);
+        Circle circle = new Circle(5.0);
+        Triangle triangle = new Triangle(10.0, 10.0);
         
-        pollObj(rectangle);
-        pollObj(circle);
-        pollObj(triangle);
+        // pollObj(rectangle);
+        // pollObj(circle);
+        // pollObj(triangle);
+        output("------ Flächen ------");
+        output("Fläche Rechteck: " + rectangle.area());
+        output("Fläche Dreieck: " + triangle.area());
+        output("Fläche Kreis: " + circle.area());
     }
 
-    private static void pollObj(Shape area) {
-        output(area);
-    }
+    // private static void pollObj(Shape area) {
+    //     output(area);
+    // }
 
 
-    private static void output(Shape area) {
-        System.out.println(area);
+    private static void output(String string) {
+        System.out.println(string);
     }
 
 
